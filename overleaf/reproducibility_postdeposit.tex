@@ -1,0 +1,46 @@
+% Define these two macros only after the public repository assigns them.
+% Example after deposit:
+% \newcommand{\ExperimentArchiveURL}{https://zenodo.org/records/<record>}
+% \newcommand{\ExperimentArchiveDOI}{10.5281/zenodo.<record>}
+
+\subsection{Reproducibility Record}
+\label{app:reproducibility-record-detail}
+
+The reproducibility release preserves the query-level records for the
+redesigned random-network experiments. For the main six-size verification
+study it contains all 26,880 paired graph--target queries (53,760 method
+records), and for the main construction study it contains all 9,600 paired
+queries (19,200 method records). The records include graph identifiers and
+hashes, query seeds, target hashes, method order, repeated kernel timings,
+repeat counts, complete decisions or output hashes, and the phase and
+operation diagnostics used in the reported summaries.
+
+The primary random-network driver uses master seed \(20260912\) and
+bootstrap seed \(20260913\). The revision validation experiments use master
+seed \(20260917\). For the shared-sparse kernels, the configured timer uses
+two warm-up calls followed by adaptive repetition until at least
+\(5\times10^6\) ns of aggregate in-kernel time has been accumulated, subject
+to a cap of 100 repeats. Graph-clustered intervals use 2,000 bootstrap
+resamples.
+
+The captured primary environment is Windows 10 x64 (build 19045), R 4.4.3
+(UCRT), and GCC 13.3.0 on two Intel Xeon Silver 4215R processors at
+3.20 GHz (16 physical cores and 32 logical processors in total), with
+128~GB installed RAM. The historical git command reports that the experiment
+directory was not a git repository, so no historical experiment commit SHA is
+claimed. The frozen public release is instead identified by its release
+commit/tag and archive SHA-256 checksum.
+
+The extended eight-size DSCS timing visualization contains 12,800 timing
+observations (128 configurations with 100 target queries per configuration).
+The left half of \texttt{judge\_coll.xlsx} preserves their 128
+configuration-level means and nominal standard errors. The archive extracts
+those summaries at full stored precision and records the 100-observation
+denominator for every configuration; it does not reconstruct the unavailable
+individual timing rows. All 128 displayed DSCS values reconcile to this source
+after presentation rounding. The redesigned six-size DSCS study, by contrast,
+has complete query-level timing records.
+
+% AFTER PUBLIC DEPOSIT, append:
+% The frozen archive is available at \url{\ExperimentArchiveURL}
+% (DOI: \href{https://doi.org/\ExperimentArchiveDOI}{\ExperimentArchiveDOI}).
