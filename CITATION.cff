@@ -1,0 +1,12 @@
+cff-version: 1.2.0
+message: "If you use this reproducibility archive, please cite the associated JMLR article and the archived release."
+title: "Reproducibility archive for Estimation Collapsibility under Markov Equivalence"
+type: dataset
+authors:
+  - family-names: Wu
+    given-names: Wentao
+  - family-names: He
+    given-names: Shiyuan
+  - family-names: Guo
+    given-names: Jianhua
+version: 1.0.0
