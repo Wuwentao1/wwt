@@ -1,0 +1,19 @@
+{
+  "paper_title": "Estimation Collapsibility under Markov Equivalence: Chain-Component Structure and Minimal Retained Sets",
+  "release_name": "jmlr-reproducibility-v1.0.0",
+  "public_archive_url": null,
+  "doi": null,
+  "doi_status": "must be assigned by public repository after upload",
+  "historical_git_commit": "unavailable from preserved run metadata; git rev-parse HEAD returned not a git repository",
+  "primary_master_seed": 20260912,
+  "primary_bootstrap_seed": 20260913,
+  "validation_master_seed": 20260917,
+  "kernel_warmup": 2,
+  "kernel_min_total_ns": 5000000,
+  "kernel_max_repeats": 100,
+  "hardware_ram": "128 GB installed; Windows reports 127.66 GiB; 8 x 16 GB Hynix modules, reported speed 3200",
+  "DSCS_extended_8size_provenance": "12,800 underlying DSCS timing observations = 128 configurations x 100 target queries; judge_coll.xlsx Sheet1 left half preserves the 128 configuration-level mean/SE summaries; displayed supplement values reconcile after rounding",
+  "release_tag": "v1.0.0",
+  "frozen_zip_sha256": "84e2a77d342f8347b10a1816567cb86f30a6731b77854026a0cfca5b2c6ef7ff",
+  "license_status": "author selection required before permanent DOI deposit"
+}
