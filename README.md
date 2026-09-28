@@ -14,11 +14,23 @@ SHA-256:
 
 `84e2a77d342f8347b10a1816567cb86f30a6731b77854026a0cfca5b2c6ef7ff`
 
-See `ARCHIVE_SHA256.txt` and `UPLOAD_RELEASE_ASSETS.md`.
+GitHub Release:
+
+`https://github.com/Wuwentao1/wwt/releases/tag/v1.0.0`
+
+Zenodo record:
+
+`https://zenodo.org/records/23008610`
+
+DOI:
+
+`10.5281/zenodo.23008610`
+
+See `ARCHIVE_SHA256.txt` and `metadata/PUBLIC_DEPOSIT.md`.
 
 ## Hardware and version-control provenance
 
-The original experiment workstation used two Intel Xeon Silver 4215R processors (16 physical cores / 32 logical processors in total) and **128 GB RAM** (8 x 16 GB Hynix modules; Windows reports 127.66 GiB total physical memory). The preserved redesigned-experiment environment capture attempted `git rev-parse HEAD`, but the experiment directory was not a Git repository at run time. Therefore no historical experiment commit SHA is claimed. The public reproducibility release is identified by its own immutable release commit/tag, which is distinct from the unavailable historical run commit.
+The original experiment workstation used two Intel Xeon Silver 4215R processors (16 physical cores / 32 logical processors in total) and **128 GB RAM** (8 x 16 GB Hynix modules; Windows reports 127.66 GiB total physical memory). The preserved redesigned-experiment environment capture attempted `git rev-parse HEAD`, but the experiment directory was not a Git repository at run time. Therefore no historical experiment commit SHA is claimed. The public reproducibility release is identified by its curated release commit/tag, which is distinct from the unavailable historical run commit.
 
 ## What the frozen release contains
 
@@ -44,6 +56,10 @@ The complete runnable source tree is included in the frozen release ZIP. The rep
 
 Use tag `v1.0.0` for the first public reproducibility release. The release tag identifies the curated public package and must not be described as the historical experiment commit.
 
-After the GitHub Release is published, connect this public repository to Zenodo and archive `v1.0.0`. Add the resulting DOI to `CITATION.cff` and the manuscript in a documentation-only follow-up commit; do not rewrite the release tag or archived numerical records.
+The frozen reproducibility archive is preserved on Zenodo as version 1.0.0:
 
-Before the permanent DOI deposit, select and add the authors' intended release license.
+- DOI: `10.5281/zenodo.23008610`
+- Record: `https://zenodo.org/records/23008610`
+- License for the Zenodo record: Creative Commons Attribution 4.0 International (CC BY 4.0).
+
+The DOI and archive URL were added in this documentation-only follow-up commit; the `v1.0.0` release tag and frozen numerical records were not rewritten.

@@ -1,9 +1,12 @@
 {
   "paper_title": "Estimation Collapsibility under Markov Equivalence: Chain-Component Structure and Minimal Retained Sets",
   "release_name": "jmlr-reproducibility-v1.0.0",
-  "public_archive_url": null,
-  "doi": null,
-  "doi_status": "must be assigned by public repository after upload",
+  "public_archive_url": "https://zenodo.org/records/23008610",
+  "doi": "10.5281/zenodo.23008610",
+  "doi_status": "published on Zenodo",
+  "zenodo_record_id": "23008610",
+  "github_release_url": "https://github.com/Wuwentao1/wwt/releases/tag/v1.0.0",
+  "release_commit": "2fee7c310237fc88f5c617b1b86276a111db1d83",
   "historical_git_commit": "unavailable from preserved run metadata; git rev-parse HEAD returned not a git repository",
   "primary_master_seed": 20260912,
   "primary_bootstrap_seed": 20260913,
@@ -15,5 +18,5 @@
   "DSCS_extended_8size_provenance": "12,800 underlying DSCS timing observations = 128 configurations x 100 target queries; judge_coll.xlsx Sheet1 left half preserves the 128 configuration-level mean/SE summaries; displayed supplement values reconcile after rounding",
   "release_tag": "v1.0.0",
   "frozen_zip_sha256": "84e2a77d342f8347b10a1816567cb86f30a6731b77854026a0cfca5b2c6ef7ff",
-  "license_status": "author selection required before permanent DOI deposit"
+  "license_status": "CC BY 4.0 on Zenodo record"
 }

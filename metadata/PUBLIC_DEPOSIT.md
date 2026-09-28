@@ -1,12 +1,17 @@
-# Public deposit procedure
+# Public deposit record
 
-Recommended public tag: `v1.0.0`.
+The first public reproducibility release has been deposited.
 
-1. Publish the curated repository contents at the public release commit.
-2. Attach the frozen ZIP and its `.sha256` sidecar to the GitHub Release without editing the ZIP.
-3. Verify the downloaded release asset against the published SHA-256.
-4. Connect the public GitHub repository to Zenodo and archive tag `v1.0.0` to obtain the version DOI and concept DOI.
-5. Add the DOI/URL to the citation metadata and manuscript in a documentation-only follow-up commit; do not rewrite the archived numerical data or move the release tag.
-6. Record the DOI, GitHub Release URL, release commit SHA, tag, and frozen ZIP SHA-256 together in the manuscript reproducibility statement.
+- GitHub repository: `https://github.com/Wuwentao1/wwt`
+- GitHub Release: `https://github.com/Wuwentao1/wwt/releases/tag/v1.0.0`
+- Release tag: `v1.0.0`
+- Release commit: `2fee7c310237fc88f5c617b1b86276a111db1d83`
+- Frozen asset: `jmlr-estimation-collapsibility-v1.0.0.zip`
+- Frozen ZIP SHA-256: `84e2a77d342f8347b10a1816567cb86f30a6731b77854026a0cfca5b2c6ef7ff`
+- Zenodo record: `https://zenodo.org/records/23008610`
+- Version DOI: `10.5281/zenodo.23008610`
+- Zenodo license: Creative Commons Attribution 4.0 International (CC BY 4.0)
 
-A newly created Git commit/tag identifies the curated release; it must not be described as the historical commit of the original experiment run.
+The Zenodo deposit preserves the frozen reproducibility package associated with GitHub Release `v1.0.0`. The DOI, URLs, and citation metadata are recorded in a documentation-only follow-up commit; the release tag, frozen ZIP, and archived numerical records are not rewritten.
+
+The curated release commit/tag must not be described as the historical commit of the original experiment run. The preserved run metadata reports that the experiment directory was not a Git repository at run time, so no historical experiment commit SHA is claimed.
