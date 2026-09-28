@@ -1,0 +1,15 @@
+Physical memory (checked on the original experiment workstation)
+Installed RAM: 128 GB
+Windows-reported total physical memory: 127.66 GiB
+Memory modules: 8 x 16 GB
+Manufacturer: Hynix
+Reported module speed: 3200
+Module part numbers observed:
+- HMA82GR7DJR8N-XN
+- HMA82GR7CJR8N-XN
+
+Source: Windows PowerShell queries
+  Get-CimInstance Win32_ComputerSystem
+  Get-CimInstance Win32_PhysicalMemory
+
+Interpretation for the manuscript/archive: report 128 GB RAM.
