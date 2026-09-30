@@ -1,10 +1,10 @@
 # JMLR reproducibility archive
 
-Reproducibility materials for **Estimation Collapsibility under Markov Equivalence: Chain-Component Structure and Minimal Retained Sets**.
+Reproducibility materials for **Estimation Collapsibility under Markov Equivalence: Chain-Component Structure and Least Retained Sets**.
 
-This repository is the public landing page for the reproducibility release. It tracks citation/provenance metadata, release documentation, and lightweight entry/configuration files. The **complete source tree, raw records, graph objects, benchmark files, and validation outputs are distributed in the frozen GitHub Release ZIP** so that the public release can be verified byte-for-byte.
+This repository is the public landing page for the reproducibility materials. It tracks citation/provenance metadata, release documentation, lightweight runnable source, checked summaries, and versioned frozen release assets.
 
-## Frozen archive
+## Published frozen archive: v1.0.0
 
 Release asset:
 
@@ -28,11 +28,38 @@ DOI:
 
 See `ARCHIVE_SHA256.txt` and `metadata/PUBLIC_DEPOSIT.md`.
 
+## E1/E2 additions for v1.1.0
+
+The repository now includes the checked E1/E2 source and summary materials used
+in the current JMLR manuscript:
+
+- `code/e1_e2/`: standalone E1 and final E2 timing-v3 implementation;
+- `results/e1_e2/`: checked E1 summaries and E2 timing-v3 summary/headline CSVs;
+- `metadata/e1_e2/VALIDATION_REPORT.md`: consistency checks against the manuscript;
+- `metadata/e1_e2/RAW_RECORDS_MANIFEST.csv`: sizes and SHA-256 hashes for the raw query-level files;
+- `metadata/e1_e2/FILE_MANIFEST_SHA256.csv`: release-asset file manifest;
+- `RELEASE_NOTES_v1.1.0.md`: planned v1.1.0 release notes.
+
+The large raw query-level E1/E2 records are kept in the frozen v1.1.0 release
+asset rather than duplicated in the lightweight repository tree. See
+`metadata/e1_e2/RAW_DATA_UPLOAD_REQUIRED.md` and
+`metadata/e1_e2/RELEASE_ASSET_SHA256.txt`.
+
+The existing v1.0.0 GitHub Release and Zenodo record remain unchanged. After
+the v1.1.0 release asset is uploaded and its checksum verified, v1.1.0 should
+be deposited as a new Zenodo version and the manuscript archive macros should
+be updated to that immutable record.
+
 ## Hardware and version-control provenance
 
-The original experiment workstation used two Intel Xeon Silver 4215R processors (16 physical cores / 32 logical processors in total) and **128 GB RAM** (8 x 16 GB Hynix modules; Windows reports 127.66 GiB total physical memory). The preserved redesigned-experiment environment capture attempted `git rev-parse HEAD`, but the experiment directory was not a Git repository at run time. Therefore no historical experiment commit SHA is claimed. The public reproducibility release is identified by its curated release commit/tag, which is distinct from the unavailable historical run commit.
+The original experiment workstation used two Intel Xeon Silver 4215R processors
+(16 physical cores / 32 logical processors in total) and 128 GB RAM. The
+preserved redesigned-experiment environment capture attempted
+`git rev-parse HEAD`, but the experiment directory was not a Git repository at
+run time. Therefore no historical experiment commit SHA is claimed. Public
+reproducibility versions are identified by their curated release commits/tags.
 
-## What the frozen release contains
+## What the v1.0.0 frozen release contains
 
 - Primary six-size verification: 26,880 paired graph-target queries / 53,760 method rows.
 - Primary six-size construction: 9,600 paired queries / 19,200 method rows.
@@ -42,24 +69,23 @@ The original experiment workstation used two Intel Xeon Silver 4215R processors 
 - Gaussian likelihood records for 10,800 queries; discrete likelihood records for 16,200 queries; discrete retained-set cross-check for 2,700 queries.
 - Controlled hull-stress/confirmatory records and exhaustive `n <= 5` validation summaries.
 - Software/compiler/CPU/OS/RAM metadata and a consolidated seed inventory.
-- Extended-eight-size DSCS source record: 12,800 timing observations (128 configurations x 100 queries) summarized by the 128 configuration-level mean/SE pairs stored in the **left half of `judge_coll.xlsx`**; all 128 displayed values reconcile after presentation rounding.
-
-## Provenance limits
-
-The archive does **not** reconstruct unavailable historical records. For the extended-eight-size DSCS experiment, `judge_coll.xlsx` preserves the 12,800 observations only through 128 configuration-level mean/SE summaries; the individual timing values are not present in the supplied workbook. Likewise, the historical eight-size MCCH-DCR study is preserved through its aggregate workbook rather than one-row-per-query timing records. See `metadata/UNRESOLVED_BEFORE_PUBLICATION.md` and `metadata/HISTORICAL_GIT_STATUS.md`.
+- Extended-eight-size DSCS source record summarized by 128 configuration-level mean/SE pairs.
 
 ## Reproduction
 
-The complete runnable source tree is included in the frozen release ZIP. The repository also exposes the primary entry point and frozen configuration under `code/main/`. `metadata/raw_records_manifest.csv` documents the record unit and completeness for each experiment family.
+The v1.0.0 complete source tree is included in its frozen release ZIP. The
+repository exposes the primary entry point and frozen configuration under
+`code/main/`.
 
-## Public release and citation
+For the E1/E2 experiments added for v1.1.0, use `code/e1_e2/README.md`. In
+particular, the manuscript E2 timing results use the **timing-v3** entry points;
+the initial E2 timer is retained only for the smoke/validation workflow.
 
-Use tag `v1.0.0` for the first public reproducibility release. The release tag identifies the curated public package and must not be described as the historical experiment commit.
+## Citation
 
-The frozen reproducibility archive is preserved on Zenodo as version 1.0.0:
+Until v1.1.0 is published and deposited, the immutable public archive remains
+v1.0.0:
 
 - DOI: `10.5281/zenodo.23008610`
 - Record: `https://zenodo.org/records/23008610`
-- License for the Zenodo record: Creative Commons Attribution 4.0 International (CC BY 4.0).
-
-The DOI and archive URL were added in this documentation-only follow-up commit; the `v1.0.0` release tag and frozen numerical records were not rewritten.
+- License: Creative Commons Attribution 4.0 International (CC BY 4.0).
