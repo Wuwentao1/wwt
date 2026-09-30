@@ -1,0 +1,5 @@
+experiment,path,record_unit,reported_count,size_bytes,sha256
+E1 factorization,raw/e1/e1_raw.csv,paired query rows,9600,3181230,eb6a642256ceb9d06be969dc1afdb60d1a936db2754406111a1ee97542f4641d
+E1 graph metadata,raw/e1/e1_graph_stats.csv,graph rows,480,35730,fa4cb82647941fd1ccaaf553aa75588996c69a217d36683739923fe17764c03a
+E2 timing-v3 Gaussian,raw/e2_timing_v3/gaussian_raw.csv,query rows,5400,2482796,e30a718cf8ce025de67a9caf1140d7ff97653c0f75dcc9524d11dca9b039599f
+E2 timing-v3 discrete,raw/e2_timing_v3/discrete_raw.csv,query rows,10800,5402145,9ca44df780a206c9f3d85a6d57a7b753f7cb7564453a58cb27db668fbf916138
