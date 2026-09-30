@@ -1,1 +1,2 @@
 84e2a77d342f8347b10a1816567cb86f30a6731b77854026a0cfca5b2c6ef7ff  jmlr-estimation-collapsibility-v1.0.0.zip
+b3782ecca7a4067cebe5d7f893355b6ca2f7c94b30262b999f3830c150f66819  jmlr-e1-e2-v1.1.0.zip
