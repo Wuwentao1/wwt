@@ -1,6 +1,6 @@
 cff-version: 1.2.0
 message: "If you use this reproducibility archive, please cite the associated JMLR article and the archived release."
-title: "Reproducibility archive for Estimation Collapsibility under Markov Equivalence: Chain-Component Structure and Minimal Retained Sets"
+title: "Reproducibility archive for Estimation Collapsibility under Markov Equivalence: Chain-Component Structure and Least Retained Sets"
 type: dataset
 authors:
   - family-names: Wu
@@ -9,9 +9,9 @@ authors:
     given-names: Shiyuan
   - family-names: Guo
     given-names: Jianhua
-version: 1.0.0
-date-released: 2026-09-28
-doi: 10.5281/zenodo.23008610
-url: "https://zenodo.org/records/23008610"
+version: 1.1.0
+date-released: 2026-09-30
+doi: 10.5281/zenodo.23051054
+url: "https://zenodo.org/records/23051054"
 repository-code: "https://github.com/Wuwentao1/wwt"
 license: CC-BY-4.0
