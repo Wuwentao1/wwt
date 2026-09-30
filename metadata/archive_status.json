@@ -1,12 +1,22 @@
 {
-  "paper_title": "Estimation Collapsibility under Markov Equivalence: Chain-Component Structure and Minimal Retained Sets",
-  "release_name": "jmlr-reproducibility-v1.0.0",
-  "public_archive_url": "https://zenodo.org/records/23008610",
-  "doi": "10.5281/zenodo.23008610",
+  "paper_title": "Estimation Collapsibility under Markov Equivalence: Chain-Component Structure and Least Retained Sets",
+  "release_name": "jmlr-reproducibility-v1.1.0",
+  "public_archive_url": "https://zenodo.org/records/23051054",
+  "doi": "10.5281/zenodo.23051054",
+  "concept_doi": "10.5281/zenodo.23008609",
   "doi_status": "published on Zenodo",
-  "zenodo_record_id": "23008610",
-  "github_release_url": "https://github.com/Wuwentao1/wwt/releases/tag/v1.0.0",
-  "release_commit": "2fee7c310237fc88f5c617b1b86276a111db1d83",
+  "zenodo_record_id": "23051054",
+  "github_release_url": "https://github.com/Wuwentao1/wwt/releases/tag/v1.1.0",
+  "release_tag": "v1.1.0",
+  "base_archive": {
+    "filename": "jmlr-estimation-collapsibility-v1.0.0.zip",
+    "sha256": "84e2a77d342f8347b10a1816567cb86f30a6731b77854026a0cfca5b2c6ef7ff",
+    "version_doi": "10.5281/zenodo.23008610"
+  },
+  "e1_e2_addition": {
+    "filename": "jmlr-e1-e2-v1.1.0.zip",
+    "sha256": "b3782ecca7a4067cebe5d7f893355b6ca2f7c94b30262b999f3830c150f66819"
+  },
   "historical_git_commit": "unavailable from preserved run metadata; git rev-parse HEAD returned not a git repository",
   "primary_master_seed": 20260912,
   "primary_bootstrap_seed": 20260913,
@@ -16,7 +26,5 @@
   "kernel_max_repeats": 100,
   "hardware_ram": "128 GB installed; Windows reports 127.66 GiB; 8 x 16 GB Hynix modules, reported speed 3200",
   "DSCS_extended_8size_provenance": "12,800 underlying DSCS timing observations = 128 configurations x 100 target queries; judge_coll.xlsx Sheet1 left half preserves the 128 configuration-level mean/SE summaries; displayed supplement values reconcile after rounding",
-  "release_tag": "v1.0.0",
-  "frozen_zip_sha256": "84e2a77d342f8347b10a1816567cb86f30a6731b77854026a0cfca5b2c6ef7ff",
   "license_status": "CC BY 4.0 on Zenodo record"
 }

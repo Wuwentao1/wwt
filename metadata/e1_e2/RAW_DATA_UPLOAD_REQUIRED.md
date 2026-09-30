@@ -3,11 +3,13 @@
 The lightweight repository tree contains the E1/E2 code, checked summaries,
 headline tables, validation report, and SHA-256 manifests.
 
-The full raw query-level records are packaged separately as the release asset:
+The full raw query-level records are packaged as the v1.1.0 release asset:
 
 `jmlr-e1-e2-v1.1.0.zip`
 
-The expected SHA-256 is recorded in `RELEASE_ASSET_SHA256.txt`.
+SHA-256:
+
+`b3782ecca7a4067cebe5d7f893355b6ca2f7c94b30262b999f3830c150f66819`
 
 The ZIP contains:
 
@@ -20,5 +22,6 @@ The ZIP contains:
 - the corrected standalone E1/E2 source tree;
 - a complete SHA-256 manifest.
 
-After creating GitHub Release `v1.1.0`, upload this ZIP as a release asset and
-verify its downloaded SHA-256 before creating the new Zenodo version.
+The asset is published in GitHub Release `v1.1.0` and archived in Zenodo record
+`23051054` (version DOI `10.5281/zenodo.23051054`). The same Zenodo version also
+retains the v1.0.0 base archive for cumulative reproducibility.
